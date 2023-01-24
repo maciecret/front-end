@@ -1,0 +1,59 @@
+
+.filter-tab{
+    margin: 20px 20px 20px 20px;
+    color: rgb(166, 191, 172);
+}
+.filter-tab .filter-title{
+    color: rgb(166, 191, 172, 0.5);
+    margin-right: 15px;
+}
+.filter-tab .shop-by-category a{
+    color: aliceblue;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding:  20px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+ul li ul.dropdown li{
+    display: block;
+    margin:  5px 5px 5px 5px;
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    background: #000000;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    
+}
+
+ul li a:hover{
+    background:rgb(166, 191, 172);
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .filter-tab{
+        display: none;
+    }
+    
+}
